@@ -10,5 +10,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm install -g dontenv-cli
+      - run: npm install -g dotenv-cli
       - run: dotenv -e ${{ vars.PROPERTIES_FILE }} --debug
